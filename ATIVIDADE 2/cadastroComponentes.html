@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Componentes</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="painelStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            align-items: center;
+        }
+        input{
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 2px;
+            height: 35px;
+            background-color: white;
+            font-size: 12px;
+            border-radius: 10px;
+        }
+        #cadastrar{
+            background-color: #394674;
+            border-radius: 10px;
+            color: white;
+        }
+        #cadastrar:hover{
+            background-color: #19213d;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
+    </header>
+    <nav>
+        <ul>
+            <li><a href="painelDeControlee.html">Painel</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+            <li><a href="cadastroComponentes.html">Cadastro de Componentes Curriculares</a></li>
+            <li><a href="index.html"><i class="fa fa-sign-out"></i>  Sair</a></li>
+        </ul>
+    </nav>
+    <br>
+    <h2> <i class="fa fa-edit" aria-hidden="true"></i>  Cadastro de componentes curriculares</h2>
+    <h3>Preencha com os dados da sua atividade</h3>
+    <form action="painelDeControle.html">
+        
+        <p><input type="text" placeholder="Nome"></p>
+        <br>
+        <p><input type="number" placeholder="Horas"></p>
+        <br>
+        <sub><label for="">Data da atividade</label></sub>
+        <p><input type="date" placeholder="Data"></p>
+        <br>
+        <p><input type="email" placeholder="E-mail do Responsável"></p>
+        <br>
+        <p><input type="text" placeholder="Telefone"></p>
+        <br>
+        <input type="submit" value="Cadastrar atividade" id="cadastrar">
+    </form>
+
+
+    <footer>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 -
+        si3asprd02.ufc.br
+    </footer>
+</body>
+</html>

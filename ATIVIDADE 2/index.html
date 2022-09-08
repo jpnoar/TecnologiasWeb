@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(BACKGROUND.jpg);
+            background-color: rgba(255, 255, 255, 0.6);
+            background-blend-mode: lighten;
+            background-repeat: no-repeat;
+            background-size: 110% 110%;
+            align-items: center;
+        }
+        .login{
+            background-color: white;
+            border-radius: 20px;
+            margin-top: 3%;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        #logoufc{
+            width: 100px;
+        }
+        input{
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            outline: none;
+            display: block;
+            width: 100%;
+            padding: 7px;
+            border: none;
+            border-bottom: 1px solid #ddd;
+            background: transparent;
+            margin-bottom: 10px;
+            height: 45px;
+        }
+        #entrar{
+            background-color: #394674;
+            border-radius: 10px;
+            color: white;
+        }
+        #entrar:hover{
+            background-color: #19213d;  
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h3>UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas</h3>
+    </header>
+
+    <div class="login">
+        <img src="logoufc.png" alt="logoufc" id="logoufc">
+        <form action="painelDeControlee.html">
+            <p><input type="email" placeholder="Login"></p>
+            <br>
+            <p><input type="password" placeholder="Senha"></p>
+            <br>
+            <input type="submit" value="Entrar" id="entrar">
+        </form>
+    </div>
+
+
+    <footer>SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC - (85) 3366-9999 -
+        si3asprd02.ufc.br</footer>
+</body>
+
+</html>
