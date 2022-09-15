@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 3</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        /* CSS para o fundo de desktop */
+        #desktop{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: none;
+        }
+        #listra1{
+            background-color: #93C47D;
+            height: 50vh;
+        }
+        #listra2{
+            background-color: #4A86E8;
+            height: 50vh;
+        }
+
+
+        /* CSS para o fundo de tv */
+
+        #tv{
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            display: none;
+        }
+
+        #listratv1{
+            background-color: #4A86E8;
+            height: 20vh;
+        }
+        #listratv2{
+            background-color: #93C47D;
+            height: 20vh;
+        }
+
+        #listratv3{
+            background-color: #B4A7D6;
+            height: 20vh;
+        }
+
+
+
+        @media only screen and (min-width: 0px) {
+            body {
+                background-color: #93C47D;
+            }
+        }
+
+        @media only screen and (min-width: 769px) {
+            #desktop{
+                display: block;
+            }
+            #tv{
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 1280px) {
+            #tv{
+                display: block;
+            }
+            #desktop{
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="desktop">
+        <div id="listra1"></div>
+        <div id="listra2"></div>
+    </div>
+
+    <div id="tv">
+        <div id="listratv1"></div>
+        <div id="listratv2"></div>
+        <div id="listratv3"></div>
+        <div id="listratv1"></div>
+        <div id="listratv2"></div>
+    </div>
+</body>
+
+</html>
