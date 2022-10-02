@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+<style>
+    .grid-container {
+        width: 30vw; 
+        display: grid;
+        grid-template-columns: 80px 80px  80px 80px ;
+        padding: 10px;
+        
+    }
+
+    .grid-container>div {
+        border: 1px solid rgb(155, 155, 155);
+        text-align: left;
+        font-size: 18px;
+        padding: 5px;
+        height: 90px;
+        
+    }
+
+    .cinza{
+        background-color: lightgray;
+    }
+    .branco{
+        background-color: white;
+    }
+    .azul{
+        background-color: #567DA4;
+        color: white;
+    }
+
+    #itemh{order: 1;}
+    #itemc{order: 2;}
+    #itema{order: 3;}
+    #itemb{order: 4;}
+    #itemd{order: 5;}
+    #iteme{order: 6;}
+    #itemg{order: 7;}
+    #itemf{order: 8;}
+
+</style>
+</head>
+
+<body>
+    <h1>Questão 1</h1>
+    <h3>a)</h3>
+    <a href="1b.html" style="color:black;">Próximo item</a>
+    <div class="grid-container">
+        <div id="itema" class="cinza">A</div>
+        <div id="itemb" class="cinza">B</div>
+        <div id="itemc" class="branco">C</div>
+        <div id="itemd" class="cinza">D</div>
+        <div id="iteme" class="cinza">E</div>
+        <div id="itemf" class="azul">F</div>
+        <div id="itemg" class="cinza">G</div>
+        <div id="itemh" class="azul">H</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+<style>
+    .parent>div {
+        background-color: #567DA4;
+        border: 1px solid rgb(155, 155, 155);
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 20vw 4vw 4vw;
+        grid-template-rows: 6vh 6vh 25vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 30vw;
+        height: 50vh;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 4 / 2;
+    }
+
+    .div2 {
+        grid-area: 3 / 2 / 4 / 3;
+    }
+
+    .div3 {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+
+    .div4 {
+        grid-area: 1 / 2 / 2 / 4;
+    }
+
+    .div5 {
+        grid-area: 2 / 2 / 3 / 4;
+    }
+
+    #cinza {
+        background-color: lightgray;
+    }
+
+    #branco {
+        background-color: white;
+    }
+
+    #azul {
+        background-color: #567DA4;
+        color: white;
+    }
+    
+    /* Grid dentro da C */
+
+    .parent2 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 5vw;
+        grid-row-gap: 0px;
+        margin: 40px;
+        margin-top: 60px;
+    }
+
+    .parent2>div {
+        background-color: lightgray;
+        border: 1px solid rgb(155, 155, 155);
+        height: 10vh;
+        width: 3vw;
+    }
+
+    .div1-2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .div2-2 {
+        grid-area: 1 / 2 / 2 / 3;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Questão 1</h1>
+    <h3>h)</h3>
+    <a href="1g.html" style="color:black;">Item anterior</a>
+    <a href="1l.html" style="color:black;">Próximo item</a>
+    <div class="parent">
+        <div class="div1" id="branco">
+            C
+            <div class="parent2">
+                <div class="div1-2">D</div>
+                <div class="div2-2">E</div>
+            </div>
+        </div>
+        <div class="div2" id="cinza">A</div>
+        <div class="div3" id="cinza">B</div>
+        <div class="div4" id="azul">H</div>
+        <div class="div5" id="azul">F</div>
+    </div>
+
+</body>
+
+</html>

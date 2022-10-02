@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+</head>
+<style>
+    .parent>div {
+        background-color: #567DA4;
+        border: 1px solid rgb(155, 155, 155);
+    }
+
+    .parent {
+        display: grid;
+        grid-template-columns: 2vw 12vw 12vw;
+        grid-template-rows: 8vh 8vh 8vh 8vh;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        width: 30vw;
+        height: 50vh;
+    }
+
+    .div1 {
+        grid-area: 1 / 1 / 5 / 2;
+    }
+
+    .div2 {
+        grid-area: 1 / 2 / 5 / 3;
+    }
+
+    .div3 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+
+    .div4 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+
+    .div5 {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+
+    .div6 {
+        grid-area: 4 / 3 / 5 / 4;
+    }
+
+    #cinza {
+        background-color: lightgray;
+    }
+
+    #branco {
+        background-color: white;
+    }
+
+    #azul {
+        background-color: #567DA4;
+        color: white;
+    }
+</style>
+</head>
+
+<body>
+    <h1>Questão 1</h1>
+    <h3>m)</h3>
+    <a href="1l.html" style="color:black;">Item anterior</a>
+    <a href="1n.html" style="color:black;">Próximo item</a>
+    <div class="parent">
+        <div class="div1" id="azul">H</div>
+        <div class="div2" id="branco">C</div>
+        <div class="div3" id="cinza">A</div>
+        <div class="div4" id="cinza">B</div>
+        <div class="div5" id="cinza">D</div>
+        <div class="div6" id="cinza">E</div>
+    </div>
+
+</body>
+
+</html>
