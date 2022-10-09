@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="painelStyle.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        UFC - SIGAA - Sistema Integrado de Gestão de Atividades Acadêmicas
+    </header>
+    <nav><div class="btn-group" style="border-radius: 0px;">
+        <a href="painelDeControlee.html" class="btn btn-primary active" aria-current="page">Painel</a>
+        <a href="historico.html" class="btn btn-primary">Histórico</a>
+        <a href="cadastroComponentes.html" class="btn btn-primary">Cadastro de Componentes Curriculares</a>
+        <a href="index.html" class="btn btn-primary"><i class="fa fa-sign-out"></i> Sair</a>
+    </div></nav>
+    
+    <div id="cor">
+        <i class="fa fa-paint-brush" style="font-size:18px; color: white;"></i> <input type="color" name="CorSigaa"
+            id="" value="#19213f">
+    </div>
+    <div id="boxes">
+        <div id="info" class="bloco">
+            <div class="card" style="width: 18rem;">
+                <img src="eu.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title"><i class="fa fa-address-book"></i> João Paulo de Abreu Militão</h5>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><i class="fa fa-graduation-cap"></i> IRA: 8.5</li>
+                    <li class="list-group-item"><i class="fa fa-book"></i> 30 Créditos</li>
+                    <li class="list-group-item"><i class="fa fa-envelope" aria-hidden="true"></i> jpnnoar@alu.ufc.br
+                    </li>
+                </ul>
+            </div>
+
+            <button style="margin-top: 2vh; width: 18rem;" class="btn btn-primary position-relative" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <i class="fa fa-check" style="font-size:18px; color: rgb(255, 255, 255);"></i> Atividades
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    5+
+                    <span class="visually-hidden">Atividades</span>
+                  </span>
+            </button>
+        </div>
+
+        <div id="disciplina" class="bloco">
+            <h3>Disciplinas em andamento</h3>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <i class="fa fa-database" style="font-size:18px; color:#0A58CA;"></i>ㅤBanco de Dados
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Um banco de dados é uma coleção organizada de informações - ou dados
+                            - estruturadas, normalmente armazenadas eletronicamente em um sistema de computador. Um
+                            banco de dados é geralmente controlado por um sistema de gerenciamento de banco de dados
+                            (DBMS).</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <i class="fa fa-laptop" style="font-size:18px; color: #0A58CA;"></i>ㅤTecnologias WEB
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A Web aberta apresenta oportunidades incríveis para os
+                            desenvolvedores. Para tirar o máximo proveito dessas tecnologias, você precisa saber como
+                            usá-las. Abaixo, você encontrará links para nossa documentação de tecnologias Web.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            <i class="fa fa-calculator" style="font-size:18px; color: #0A58CA;"></i>ㅤVariáveis complexas
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">A análise complexa, também conhecida como a teoria das funções de
+                            variável complexa, é o ramo da matemática que investiga as funções de números complexos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="progresso" class="bloco">
+            <h3>Progresso no curso</h3>
+
+            Disciplinas Obrigatórias
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+              </div>
+            Disciplinas eletivas
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">35%</div>
+              </div>
+            Horas de estágio obrigatório
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 15%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">15%</div>
+              </div>
+            Horas complementares
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+              </div>
+            Horas de extensão
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+              </div>
+            Horas de programação
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-label="Example with label" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+              </div>
+        </div>
+
+    </div>
+
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Atividades pendentes</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>
+                Aqui apareceram todas as suas atividades pendentes atualmente.
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4">
+                  <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action active" href="#list-item-1" style="padding: 6px;">Atividade 1</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2" style="padding: 6px;">Atividade 2</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3" style="padding: 6px;">Atividade 3</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4" style="padding: 6px;">Atividade 4</a>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+                    <h4 id="list-item-1">Atividade 1</h4>
+                    <p>Descrição da atividade 1</p>
+                    <h4 id="list-item-2">Atividade 2</h4>
+                    <p>Descrição da atividade 2</p>
+                    <h4 id="list-item-3">Atividade 3</h4>
+                    <p>Descrição da atividade 3</p>
+                    <h4 id="list-item-4">Atividade 4</h4>
+                    <p>Descrição da atividade 4</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" >
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="1.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Menu especial</h5>
+              <p>Toca Fina Cozinha cria um menu especial para o grande baile da turma de medicina UFC Sobral 22.1.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Prestação de Contas</h5>
+              <p>Chamada nº 03/2022 para Prestação de Contas do Programa Auxílio Moradia (3º trimestre/2022).</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="3.png" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Novo Mestrado</h5>
+              <p>Mestrado em Computação do Campus de Quixadá – INSCRIÇÕES ABERTAS.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <footer style="position: fixed;">SIGAA | Copyright © 2010-2022 - Superintendência de Tecnologia da Informação - UFC
+        - (85) 3366-9999 -
+        si3asprd02.ufc.br
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+        integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
